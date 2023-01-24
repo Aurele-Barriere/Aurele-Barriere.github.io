@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+  
+<head>
+  <meta charset="utf-8"/>
+  <title>Aurèle Barrière - PhD Defense</title>
+  <link rel="stylesheet" type="text/css" href="../style/style.css" />
+</head>
+
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1><a href="../index.html"><span class="logo_colour">Aurèle Barrière - PhD Defense</span></a></h1>
+        <h2>PhD Student</h2>
+      </div>
+    </div>
+
+    <div id="site_content">
+      <div id="content">
+
+	<h1>Formal Verification of Just-in-Time Compilation</h1>
+	<p><a href="main.pdf">Thesis dissertation</a></p>
+
+	<h1>Watching the Defense</h1>
+	<p>December 19th 2022, 15h (3pm, GMT+1).</br>
+	At IRISA Rennes, room Petri-Turing.</p>
+
+	<p>Please send me an email if you wish to attend live.
+	  You can also watch the defense online using the link below.</p>
+
+	<p><b>During the presentation, please turn off your video if you are not a member of the jury </br> Pendant la présentation, merci de couper votre caméra si vous ne faites pas partie du jury.</b></p>
+	
+	<p><a href="https://inria.webex.com/inria/j.php?MTID=m70eab930d48e8bae5c9ce844c81b3d80">Webex Link</a></p>
+	
+
+	<h1>PhD Jury</h1>
+	<ul>
+	  <li> Sandrine Blazy. Professeur des Universités, Université de Rennes 1. <i>Directrice de thèse.</i>
+	  <li> David Pichardie. Chercheur, Meta. <i>Co-encadrant de thèse.</i>
+	  <li> Andrew Appel. Professor, Princeton University. <i>Reviewer.</i>
+	  <li> Xavier Leroy. Professeur, Collège de France. <i>Reviewer.</i>
+	  <li> Stephan Merz. Directeur de Recherche, INRIA.
+	  <li> Magnus Myreen. Associate Professor, Chalmers University of Technology.
+	  <li> Alan Schmitt. Directeur de Recherche, INRIA.
+	  <li> Manuel Serrano. Directeur de Recherche, INRIA.
+	</ul>
+
+	<h1>Abstract</h1>
+	<p>Just-in-Time compilation is a technique to execute programs, where execution is interleaved with optimizations.
+	  Just-in-Time compilers often produce fast executions, but are particularly complex.
+	  For instance, they reuse various existing techniques: some contain both interpreters to execute programs and traditional compilers to generate optimized machine code.
+	  They also use ad hoc techniques like speculation, which consists in predicting the future behavior of the program to generate specialized code that executes particularly fast if the prediction holds.</p>
+	
+	<p>This great complexity can lead to bugs.
+	  This thesis tackles their formal verification, to develop Just-in-Time compilers in such a way that one can formally prove that they behave as prescribed by the semantics of the program they execute.
+	  We present correctness proofs for their main features, including speculation, dynamic optimizations and machine code generation.
+	  We reuse proof techniques from formally verified traditional compilers like CompCert.
+	  All our proofs have been mechanized in the Coq proof assistant.</p>
+	
+      </div>
+    </div>
+  </div>
+</body>      
+</html>
+	
