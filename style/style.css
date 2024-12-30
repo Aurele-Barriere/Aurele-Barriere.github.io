@@ -1,12 +1,11 @@
-/* deep blue (title) :  #02204b */
-/* clear blue (headers) : #4993fa */
+/* deep blue (title) :  #02202b */
+/* clear blue (headers) : #2973CA */
 /* clearer blue (background) : #e4e6e8 */
-/* brown (subtitle) : #937753 */
-/* subtitles : #9B8828 */
-/* beige (body background) : f6f3ef */
+/* brown (subtitle) : #402E2A */
+/* beige (body background) : #fafafa */
 /* grey (page selection) : #c5c5c5 */
-/* black (text color : #1d1d1d */
-
+/* black (text color) : #1d1d1d */
+/* links : #684551 */
 
 
 
@@ -18,7 +17,7 @@ html
   padding: 0;}
 
 body
-{ font: normal .80em trebuchet ms, sans-serif;
+{ font: normal 1em trebuchet ms, sans-serif;
   background: #e4e6e8;
   color: #1d1d1d;}
 
@@ -31,13 +30,13 @@ img
 
 h1, h2, h3, h4, h5, h6 
 { font: normal 165% 'century gothic', arial, sans-serif;
-  color: #4993fa;
+  color: #2973CA;
   margin: 0 0 14px 0;
   padding: 10px 0 5px 0;}
 
 h2
 { font: normal 120% 'century gothic', arial, sans-serif;
-  color: #02204b;}
+  color: #02202B;}
 
 h3
 { font: normal 165% 'century gothic', arial, sans-serif;}
@@ -56,7 +55,7 @@ h5, h6
 a, a:hover
 { outline: none;
   text-decoration: underline;
-  color: #9B8828;}
+  color: #684551;}
 
 a:hover
 { text-decoration: none;}
@@ -112,12 +111,12 @@ ol li
 #logo h1
 { padding: 24px 0 0 0;
   margin: 0;
-  color: #02204b;}
+  color: #02202B;}
 
 #logo h2
 { font-size: 120%;
   padding: 4px 0 0 0;
-  color: #937753;}
+  color: #402E2A;}
 
 #logo h1, #logo h1 a, #logo h1 a:hover 
 { padding: 22px 0 0 0;
@@ -125,10 +124,10 @@ ol li
   text-decoration: none;}
 
 #logo h1 a .logo_colour
-{ color: #02204b;}
+{ color: #02202B;}
 
 #logo a:hover .logo_colour
-{ color: #02204b;}
+{ color: #02202B;}
 
 #menubar
 { height: 24px;
@@ -158,18 +157,18 @@ ul#menu li a
 
 ul#menu li.selected a, ul#menu li.selected a:hover
 { background: #FFF;
-  color: #937753;}
+  color: #402E2A;}
 
 ul#menu li a:hover
-{ color: #937753;}
+{ color: #402E2A;}
 
 #site_content
 { width: 850px;
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 10px 20px 20px 20px;
-  background: #f6f3ef url(back.png) repeat-y;
-  border: 15px solid #FFF;} 
+  background: #fafafa url(back.png) repeat-y;
+  border: 15px solid #fafafa;} 
 
 .sidebar
 { float: right;
