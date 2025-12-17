@@ -29,14 +29,15 @@
 	    <li>We design and mechanize the <b>semantics</b> of real-world regex languages.</li>
 	    <li>We write mechanized <b>proofs</b> of regex properties, and of the correctness of matching algorithms.</li>
 	  </ul>
+	  
+	  A long-term goal is to develop Linden: a formally verified, linear-time, efficient engine for JavaScript regexes.
 	</p>
 
 	<p>
-	  One of our long-term goals is to develop Linden: a formally verified, linear-time, efficient JavaScript regex engine.
+	  Feel free to reach out to <a href="index.html">Aurèle Barrière</a> and <a href="https://pit-claudel.fr/clement/">Clément Pit-Claudel</a> if you're a student looking for internships, master thesis, or PhD opportunities! One <a href="proposals/regex_eq_theory.pdf">internship proposal</a> is currently available, but we have many more topics to choose from!
 	</p>
 
-
-	<a name="develoments"></a><h1>Developments</h1>
+	<a name="developments"></a><h1>Main Developments</h1>
 	<ul>
 	  <li><b><a href="https://github.com/epfl-systemf/RegElk">RegElk</a></b>: a linear engine for JavaScript regexes, in OCaml.</br>
 	    We developed new linear-time algorithms for modern regex features. This includes the first linear-time algorithms for unbounded lookarounds with capture groups. We also designed new regex-size-linear algorithms for JavaScript specificities, like capture group reset and the JavaScript quantifiers.</br>
@@ -51,7 +52,7 @@
 	    This mechanization is described in our <a href="#icfp24">ICFP24 paper</a>.
 	  <li><b><a href="https://github.com/epfl-systemf/Linden">Linden</a></b>: a formally verified linear engine for JavaScript regexes.</br>
 	    This includes a new <i>backtracking tree</i> semantics, designed with formal verification in mind, and proved to be equivalent to Warblre.
-	    Using this new semantics, we present a new definition of JavaScript regex equivalence, and the proof of some equivalences.
+	    Using this new semantics, we present a new definition of JavaScript regex equivalence, and prove some equivalences.
 	    We also prove the correctness of the PikeVM matching algorithm, relating it to the ECMAScript semantics.
 	    This work has been described in our <a href="#popl26">POPL26 paper</a>.
 	</ul>
