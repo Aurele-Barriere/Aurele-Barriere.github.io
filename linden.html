@@ -39,18 +39,18 @@
 
 	<a name="developments"></a><h1>Main Developments</h1>
 	<ul>
-	  <li><b><a href="https://github.com/LindenRegex/RegElk">RegElk</a></b>: a linear engine for JavaScript regexes, in OCaml.</br>
-	    We developed new linear-time algorithms for modern regex features. This includes the first linear-time algorithms for unbounded lookarounds with capture groups. We also designed new regex-size-linear algorithms for JavaScript specificities, like capture group reset and the JavaScript quantifiers.</br>
+	  <li><b><a href="https://github.com/LindenRegex/RegElk">RegElk</a></b>: a linear engine for JavaScript regexes, in OCaml.<br>
+	    We developed new linear-time algorithms for modern regex features. This includes the first linear-time algorithms for unbounded lookarounds with capture groups. We also designed new regex-size-linear algorithms for JavaScript specificities, like capture group reset and the JavaScript quantifiers.<br>
 	    Our algorithms are described in our <a href="#pldi24">PLDI24 paper</a>.
 	    We have also merged some of these algorithms in the linear engine of V8: <a href="https://chromium-review.googlesource.com/c/v8/v8/+/6048873">lookarounds</a>, <a href="https://chromium-review.googlesource.com/c/v8/v8/+/4755530">nullable quantifiers</a>, <a href="https://chromium-review.googlesource.com/c/v8/v8/+/5331030">capture group reset</a>.
 	  </li>
-	  <li><b><a href="https://github.com/LindenRegex/re2-lookbehinds">RE2-lookbehinds</a></b> and <b><a href="https://github.com/rust-lang/regex/pull/1266">Rust-regex-lookbehinds</a></b>: forks of the RE2 and rust-lang/regex linear engines to add support for captureless lookbehinds in linear time.</br>
+	  <li><b><a href="https://github.com/LindenRegex/re2-lookbehinds">RE2-lookbehinds</a></b> and <b><a href="https://github.com/rust-lang/regex/pull/1266">Rust-regex-lookbehinds</a></b>: forks of the RE2 and rust-lang/regex linear engines to add support for captureless lookbehinds in linear time.<br>
 	    These forks have been described in the following blog posts: <a href="https://systemf.epfl.ch/blog/re2-lookbehinds/">RE2 blog post</a> and <a href="https://systemf.epfl.ch/blog/rust-regex-lookbehinds/">Rust blog post</a>.</li>
-	  <li><b><a href="https://github.com/LindenRegex/Warblre">Warblre</a></b>: a faithful Rocq mechanization of the regex chapter of ECMAScript 2023.</br>
+	  <li><b><a href="https://github.com/LindenRegex/Warblre">Warblre</a></b>: a faithful Rocq mechanization of the regex chapter of ECMAScript 2023.<br>
 	    With a line-by-line translation, we provide an executable and faithful Rocq semantics for JavaScript regexes.
 	    We used this semantics to prove properties of the language (termination and absence of failure), and an optimization.
 	    This mechanization is described in our <a href="#icfp24">ICFP24 paper</a>.
-	  <li><b><a href="https://github.com/LindenRegex/Linden">Linden</a></b>: a formally verified linear engine for JavaScript regexes.</br>
+	  <li><b><a href="https://github.com/LindenRegex/Linden">Linden</a></b>: a formally verified linear engine for JavaScript regexes.<br>
 	    This includes a new <i>backtracking tree</i> semantics, designed with formal verification in mind, and proved to be equivalent to Warblre.
 	    Using this new semantics, we present a new definition of JavaScript regex equivalence, and prove some equivalences.
 	    We also prove the correctness of the PikeVM matching algorithm, relating it to the ECMAScript semantics.
@@ -62,27 +62,28 @@
 
 	<h2>Conference Publications</h2>
 	<ul>
-	  <li><a id="popl26"></a><b>POPL 2026</b> Formal Verification for JavaScript Regular Expressions:<br/>
-	    a Proven Semantics and its Applications.<br/>
-	    <i>Aurèle Barrière, Victor Deng, Clément Pit-Claudel.</i><br/>
+	  <li><a id="popl26"></a><b>POPL 2026</b> Formal Verification for JavaScript Regular Expressions:<br>
+	    a Proven Semantics and its Applications.<br>
+	    <i>Aurèle Barrière, Victor Deng, Clément Pit-Claudel.</i><br>
+	    <!-- Distinguished Paper Award<br> -->
 	    <a href="https://dl.acm.org/doi/10.1145/3776710">Paper</a>. <a href="https://arxiv.org/abs/2507.13091">Extended Version</a>. <a href="https://github.com/LindenRegex/Linden">Rocq Development</a>. <a href="https://zenodo.org/records/17305393"> Artifact</a>. <a href="https://www.youtube.com/live/dpujw_qifyE?si=3akYITNk3WPOa7X6&t=2500">Recorded Talk</a>.</li>
 
-	  <li><a id="icfp24"></a><b>ICFP 2024</b> A Coq Mechanization of JavaScript Regular Expression Semantics.<br/>
-	    <i>Noé De Santo, Aurèle Barrière, Clément Pit-Claudel.</i><br/>
+	  <li><a id="icfp24"></a><b>ICFP 2024</b> A Coq Mechanization of JavaScript Regular Expression Semantics.<br>
+	    <i>Noé De Santo, Aurèle Barrière, Clément Pit-Claudel.</i><br>
 	    <a href="https://dl.acm.org/doi/10.1145/3674666">Paper</a>. <a href="https://github.com/LindenRegex/Warblre">Coq Development</a>. <a href="https://zenodo.org/records/11494317"> Artifact</a>. <a href="https://www.youtube.com/watch?v=PAk8_Lgs8Xw">Recorded Talk</a>.</li>
 
-	  <li><a id="pldi24"></a><b>PLDI 2024</b> Linear Matching of JavaScript Regular Expressions.<br/>
-	    <i>Aurèle Barrière, Clément Pit-Claudel.</i><br/>
+	  <li><a id="pldi24"></a><b>PLDI 2024</b> Linear Matching of JavaScript Regular Expressions.<br>
+	    <i>Aurèle Barrière, Clément Pit-Claudel.</i><br>
 	    <a href="https://dl.acm.org/doi/10.1145/3656431">Paper</a>. <a href="https://github.com/LindenRegex/RegElk">OCaml Development</a>. <a href="https://zenodo.org/records/10806044"> Artifact</a>. <a href="https://www.youtube.com/watch?v=VnwKOI8aKmA">Recorded Talk</a>.</li>
 	</ul>
 
 	<h2>Theses</h2>
 	<ul>
-	  <li><b>Master Thesis, 2025</b> Optimizing Regex Compilers.<br/>
+	  <li><b>Master Thesis, 2025</b> Optimizing Regex Compilers.<br>
 	    <i>Zacharie Tevaearai</i>. <a href="https://infoscience.epfl.ch/entities/publication/bc2e3df6-31eb-489d-9789-8947ad59106b">Thesis</a>.</li>
-	  <li><b>Master Thesis, 2024</b> Formal Verification of Memoized Backtracking for JavaScript Regexes.<br/>
+	  <li><b>Master Thesis, 2024</b> Formal Verification of Memoized Backtracking for JavaScript Regexes.<br>
 	    <i>Sophie Ammann</i>. <a href="https://infoscience.epfl.ch/entities/publication/ab1e6871-ed64-4820-8ec6-e390487d4d80">Thesis</a>.</li>
-	  <li><b>Master Thesis, 2024</b> Mechanized Semantics for JavaScript Regular Expressions.<br/>
+	  <li><b>Master Thesis, 2024</b> Mechanized Semantics for JavaScript Regular Expressions.<br>
 	    <i>Noé De Santo</i>. <a href="https://infoscience.epfl.ch/entities/publication/9b1d1db8-70ad-4735-b6a4-6eccafcaa161">Thesis</a>.</li>
 	  </ul>
 
